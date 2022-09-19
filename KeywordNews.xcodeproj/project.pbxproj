@@ -16,6 +16,8 @@
 		D8B7019328D8DBCF008B3146 /* KeywordNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B7019228D8DBCF008B3146 /* KeywordNewsUITests.swift */; };
 		D8B7019528D8DBCF008B3146 /* KeywordNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B7019428D8DBCF008B3146 /* KeywordNewsUITestsLaunchTests.swift */; };
 		D8B701A328D8DDCD008B3146 /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B701A228D8DDCD008B3146 /* NewsListPresenter.swift */; };
+		D8B701A728D8E140008B3146 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8B701A628D8E140008B3146 /* SnapKit */; };
+		D8B701A928D8E283008B3146 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B701A828D8E283008B3146 /* NewsListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		D8B7019228D8DBCF008B3146 /* KeywordNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordNewsUITests.swift; sourceTree = "<group>"; };
 		D8B7019428D8DBCF008B3146 /* KeywordNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8B701A228D8DDCD008B3146 /* NewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenter.swift; sourceTree = "<group>"; };
+		D8B701A828D8E283008B3146 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B701A728D8E140008B3146 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +143,7 @@
 			children = (
 				D8B7017528D8DBCD008B3146 /* NewsListViewController.swift */,
 				D8B701A228D8DDCD008B3146 /* NewsListPresenter.swift */,
+				D8B701A828D8E283008B3146 /* NewsListTableViewCell.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -159,6 +164,9 @@
 			dependencies = (
 			);
 			name = KeywordNews;
+			packageProductDependencies = (
+				D8B701A628D8E140008B3146 /* SnapKit */,
+			);
 			productName = KeywordNews;
 			productReference = D8B7016E28D8DBCD008B3146 /* KeywordNews.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +239,9 @@
 				Base,
 			);
 			mainGroup = D8B7016528D8DBCD008B3146;
+			packageReferences = (
+				D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D8B7016F28D8DBCD008B3146 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B7017628D8DBCD008B3146 /* NewsListViewController.swift in Sources */,
+				D8B701A928D8E283008B3146 /* NewsListTableViewCell.swift in Sources */,
 				D8B7017228D8DBCD008B3146 /* AppDelegate.swift in Sources */,
 				D8B7017428D8DBCD008B3146 /* SceneDelegate.swift in Sources */,
 				D8B701A328D8DDCD008B3146 /* NewsListPresenter.swift in Sources */,
@@ -608,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8B701A628D8E140008B3146 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8B7016628D8DBCD008B3146 /* Project object */;
 }
