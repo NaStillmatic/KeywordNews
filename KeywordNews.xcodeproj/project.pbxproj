@@ -21,6 +21,7 @@
 		D8B701A328D8DDCD008B3146 /* NewsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B701A228D8DDCD008B3146 /* NewsListPresenter.swift */; };
 		D8B701A728D8E140008B3146 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8B701A628D8E140008B3146 /* SnapKit */; };
 		D8B701A928D8E283008B3146 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B701A828D8E283008B3146 /* NewsListTableViewCell.swift */; };
+		D8D49D9B28DAE8CA000D9DFF /* NewsListTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D49D9A28DAE8CA000D9DFF /* NewsListTableViewHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D8B7019428D8DBCF008B3146 /* KeywordNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8B701A228D8DDCD008B3146 /* NewsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListPresenter.swift; sourceTree = "<group>"; };
 		D8B701A828D8E283008B3146 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
+		D8D49D9A28DAE8CA000D9DFF /* NewsListTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				D8B7017528D8DBCD008B3146 /* NewsListViewController.swift */,
 				D8B701A228D8DDCD008B3146 /* NewsListPresenter.swift */,
 				D8B701A828D8E283008B3146 /* NewsListTableViewCell.swift */,
+				D8D49D9A28DAE8CA000D9DFF /* NewsListTableViewHeaderView.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -185,7 +188,6 @@
 				46EC1E19F8059FA9AF11A72B /* Pods-KeywordNewsTests.debug.xcconfig */,
 				2A2A4EF9CB7E8940E57AD000 /* Pods-KeywordNewsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -286,7 +288,7 @@
 			);
 			mainGroup = D8B7016528D8DBCD008B3146;
 			packageReferences = (
-				D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = D8B7016F28D8DBCD008B3146 /* Products */;
 			projectDirPath = "";
@@ -435,6 +437,7 @@
 			files = (
 				D8B7017628D8DBCD008B3146 /* NewsListViewController.swift in Sources */,
 				D8B701A928D8E283008B3146 /* NewsListTableViewCell.swift in Sources */,
+				D8D49D9B28DAE8CA000D9DFF /* NewsListTableViewHeaderView.swift in Sources */,
 				D8B7017228D8DBCD008B3146 /* AppDelegate.swift in Sources */,
 				D8B7017428D8DBCD008B3146 /* SceneDelegate.swift in Sources */,
 				D8B701A328D8DDCD008B3146 /* NewsListPresenter.swift in Sources */,
@@ -777,7 +780,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -790,7 +793,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		D8B701A628D8E140008B3146 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			package = D8B701A528D8E140008B3146 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

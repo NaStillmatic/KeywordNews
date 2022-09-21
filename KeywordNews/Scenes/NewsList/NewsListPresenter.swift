@@ -43,9 +43,13 @@ extension NewsListPresenter: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: NewsListTableViewCell.identifier,
                                                    for: indexPath) as? NewsListTableViewCell else { return UITableViewCell() }
-
     cell.setup()
-
     return cell
+  }
+
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: NewsListTableViewHeaderView.identifier) as? NewsListTableViewHeaderView else { return nil }
+    header.setup()
+    return header
   }
 }
