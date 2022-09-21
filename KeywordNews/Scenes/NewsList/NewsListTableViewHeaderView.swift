@@ -13,6 +13,8 @@ final class NewsListTableViewHeaderView: UITableViewHeaderFooterView {
 
   static let identifier = "NewsListTableViewHeaderView"
 
+  private var selectedIndex: UInt = 0
+
   private var tags: [String] =  ["IT", "아이폰", "개발", "개발자", "판교", "게임", "앱개발", "강남", "스타트업"]
 
   private let tagCollectionView = TTGTextTagCollectionView()
@@ -27,9 +29,15 @@ final class NewsListTableViewHeaderView: UITableViewHeaderFooterView {
 
 extension NewsListTableViewHeaderView: TTGTextTagCollectionViewDelegate {
 
-  func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!, didTap tag: TTGTextTag!, at index: UInt) {
-    guard tag.selected else { return }
-    print(tags[Int(index)])
+  func textTagCollectionView(_ textTagCollectionView: TTGTextTagCollectionView!,
+                             didTap tag: TTGTextTag!,
+                             at index: UInt) {
+    selectedIndex = index
+    textTagCollectionView.allTags().forEach { tag in
+      let isSelected = selectedIndex == tag.tagId ? true : false
+      textTagCollectionView.updateTag(at: tag.tagId, selected: isSelected)
+    }
+    textTagCollectionView.reload()
   }
 }
 
@@ -48,7 +56,7 @@ private extension NewsListTableViewHeaderView {
     tagCollectionView.numberOfLines = 1
     tagCollectionView.scrollDirection = .horizontal
     tagCollectionView.showsHorizontalScrollIndicator = false
-    tagCollectionView.selectionLimit = 1
+    tagCollectionView.selectionLimit = 2
 
     let insetValue: CGFloat = 16.0
     tagCollectionView.contentInset = UIEdgeInsets(top: insetValue,
@@ -66,7 +74,6 @@ private extension NewsListTableViewHeaderView {
     style.borderWidth = 0.0
     style.shadowOpacity = shadowOpacity
     style.extraSpace = extraSpace
-
 
     let selectedStyle = TTGTextTagStyle()
     selectedStyle.backgroundColor = .white
