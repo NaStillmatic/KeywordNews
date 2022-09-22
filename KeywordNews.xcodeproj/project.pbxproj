@@ -27,6 +27,7 @@
 		D8EC128A28DC18D300D1B718 /* NewsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC128928DC18D300D1B718 /* NewsResponseModel.swift */; };
 		D8EC128D28DC19B900D1B718 /* NewsSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC128C28DC19B900D1B718 /* NewsSearchManager.swift */; };
 		D8EC129128DC19E400D1B718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D8EC129028DC19E400D1B718 /* Alamofire */; };
+		D8EC129328DC1F9900D1B718 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC129228DC1F9900D1B718 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		D8EC128728DC18CA00D1B718 /* NewsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequestModel.swift; sourceTree = "<group>"; };
 		D8EC128928DC18D300D1B718 /* NewsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponseModel.swift; sourceTree = "<group>"; };
 		D8EC128C28DC19B900D1B718 /* NewsSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchManager.swift; sourceTree = "<group>"; };
+		D8EC129228DC1F9900D1B718 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				D8B7017128D8DBCD008B3146 /* AppDelegate.swift */,
 				D8B7017328D8DBCD008B3146 /* SceneDelegate.swift */,
+				D8EC129428DC206400D1B718 /* Extention */,
 				D8EC128E28DC19C000D1B718 /* Managers */,
 				D8EC128B28DC18DC00D1B718 /* Models */,
 				D8B701A128D8DDBC008B3146 /* Scenes */,
@@ -214,6 +217,14 @@
 				D8EC128C28DC19B900D1B718 /* NewsSearchManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		D8EC129428DC206400D1B718 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				D8EC129228DC1F9900D1B718 /* String+.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 		FA8A9FDEAAD450A00E91A2EE /* Pods */ = {
@@ -482,6 +493,7 @@
 				D8EC128D28DC19B900D1B718 /* NewsSearchManager.swift in Sources */,
 				D8EC128A28DC18D300D1B718 /* NewsResponseModel.swift in Sources */,
 				D8B7017228D8DBCD008B3146 /* AppDelegate.swift in Sources */,
+				D8EC129328DC1F9900D1B718 /* String+.swift in Sources */,
 				D8D49D9D28DB1055000D9DFF /* NewsWebViewController.swift in Sources */,
 				D8B7017428D8DBCD008B3146 /* SceneDelegate.swift in Sources */,
 				D8B701A328D8DDCD008B3146 /* NewsListPresenter.swift in Sources */,

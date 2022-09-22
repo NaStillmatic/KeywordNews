@@ -16,7 +16,7 @@ protocol NewsSearchManagerProtocol {
                completionHandeler: @escaping ([News]) -> Void)
 }
 
-struct NewsSearchManager {
+struct NewsSearchManager: NewsSearchManagerProtocol {
 
   func requset(from keyword: String,
                start: Int,

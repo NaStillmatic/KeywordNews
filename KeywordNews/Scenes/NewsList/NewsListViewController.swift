@@ -35,10 +35,6 @@ final class NewsListViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     presenter.viewDidLoad()
-
-    NewsSearchManager().requset(from: "아이폰", start: 1, display: 20) { news in
-      print(news)
-    }
   }
 }
 
@@ -61,9 +57,13 @@ extension NewsListViewController: NewsListProtocol {
     refreshControl.endRefreshing()
   }
 
-  func moveToNewsWebViewController() {
-    let newsWebViewController = NewsWebViewController()
+  func moveToNewsWebViewController(news: News) {
+    let newsWebViewController = NewsWebViewController(news: news)
     navigationController?.pushViewController(newsWebViewController, animated: true)
+  }
+
+  func reloadTableView() {
+    tableview.reloadData()
   }
 }
 
