@@ -60,6 +60,9 @@ private extension NewsListTableViewHeaderView {
   }
 
   func setupTagCollectionView() {
+
+    guard tagCollectionView.allTags().isEmpty else { return }
+    
     tagCollectionView.delegate = self
     tagCollectionView.numberOfLines = 1
     tagCollectionView.scrollDirection = .horizontal

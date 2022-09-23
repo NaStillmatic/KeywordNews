@@ -24,7 +24,7 @@ final class NewsListPresenter: NSObject {
   private var currentPage: Int = 0
   private let display: Int = 20
 
-  private let tags: [String] =  ["IT", "아이폰", "개발", "개발자", "판교", "게임", "앱개발", "강남", "스타트업"]
+  private let tags: [String] =  ["IT", "아이폰", "개발", "개발자", "판교", "게임", "앱개발", "스타트업"]
 
   private lazy var currentKeyword: String = {
     return tags[0]
@@ -88,7 +88,7 @@ extension NewsListPresenter: UITableViewDataSource {
   func tableView(_ tableView: UITableView,
                  viewForHeaderInSection section: Int) -> UIView? {
     guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: NewsListTableViewHeaderView.identifier) as? NewsListTableViewHeaderView else { return nil }
-    header.setup(tags: tags, delegate: self)    
+    header.setup(tags: tags, delegate: self)
     return header
   }
 }
